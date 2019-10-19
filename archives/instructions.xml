@@ -1,0 +1,27 @@
+Please follow the below steps to make the search engine work in your machine.
+
+Pre-requisites:
+1. Make sure hadoop in installed and you should see namenode and datajode when you enter 'jps' command.
+2. Make sure spark is installed
+3. Python-rocksdb should be installed.
+4. Flask in python should be installed.
+    a). To install, do this: pip install flask
+
+
+Running instructions:
+1. First run 'bash putdata.sh' to load the data into hadoop
+2. Enter 'python search_api.py'
+3. Now open index.html
+    a). It takes a while to load the first time as it is creating RDDs.
+4. You should see url of type 'http://127.0.0.1:5000/api/v1/search/?query=diabetes'.
+    a). Replace the word 'diabetes' with the query of your choice. Query could be of multiple words too.
+    b). Press Enter to see the results.
+5. Instead of 3,4 you could just open Postman and do a GET request to the link: http://127.0.0.1:5000/api/v1/search/?query=diabetes
+    a). Keep changing the queries to see different results
+
+    
+
+
+
+
+
