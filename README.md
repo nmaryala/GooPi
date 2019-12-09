@@ -26,6 +26,14 @@ Pre-requisites:
 3. Python-rocksdb should be installed.
 4. Flask in python should be installed. To install, do this: pip install flask
 
+Pre-run instructions:
+1. Go to your Hadoop folder and run the following commands.
+   a). bin/hadoop namenode -format
+   b). bin/hadoop datanode -format
+2. Go to  localhost:50070/dfshealth.html and check NameNode interface.
+3. Go to  localhost:50075/ to see if your datanode is up.
+4. For any issues: Follow this tutorial: https://www.edureka.co/blog/install-hadoop-single-node-hadoop-cluster
+
 
 Running instructions:
 1. First pull the code to your local machine and go to the folder mini-google-group-8
