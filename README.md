@@ -39,6 +39,7 @@ Running instructions:
 1. First pull the code to your local machine and go to the folder mini-google-group-8
 2. Run 'bash putdata.sh'. Please give permissions with 'chmod +x putdata.sh' before running. This will do steps 3-5 for you.
 3. This script first creates directories for and loads the data into your hdfs. 
+3.5. You can check the files at http://localhost:50070/explorer.html#/
 4. Then it will create the reverse index by calling the invertIndex.py script andd load the data into rocksdb.
 5. It will finally call search_api_new.py, and create the URL below for you to query. 
 6. Go to the URL 'http://127.0.0.1:5000/api/v1/search/?query=diabetes'.
